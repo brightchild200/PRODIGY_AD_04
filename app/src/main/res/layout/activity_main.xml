@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/black"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="460dp"
+        android:src="@drawable/logocropnobg" />
+
+<!--<TextView-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:text="Tic Tac Toe"-->
+<!--    android:textStyle="bold"-->
+<!--    android:textColor="@color/white"-->
+<!--    android:fontFamily=""-->
+<!--    android:textSize="45dp"-->
+<!--    android:gravity="center"-->
+<!--    android:paddingBottom="8dp"-->
+<!--    android:paddingTop="24dp"-->
+<!--    android:layout_margin="8dp"-->
+
+<!--    android:background=""-->
+<!--    />-->
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/play_offline"
+        android:text="Play Offline"
+        android:layout_marginTop="-20dp"
+        android:padding="10dp"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="#1F0124"
+        android:backgroundTint="#FF69B4"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/play_online"
+        android:text="Play Online"
+        android:layout_marginTop="30dp"
+        android:padding="10dp"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="#1F0124"
+        android:backgroundTint="#FF69B4"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        />
+
+</LinearLayout>
