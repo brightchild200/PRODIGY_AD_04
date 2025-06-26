@@ -8,10 +8,10 @@
             <InsightsFilterSettings>
               <option name="connection">
                 <ConnectionSetting>
-                  <option name="appId" value="PLACEHOLDER" />
-                  <option name="mobileSdkAppId" value="" />
-                  <option name="projectId" value="" />
-                  <option name="projectNumber" value="" />
+                  <option name="appId" value="com.example.tictactoe" />
+                  <option name="mobileSdkAppId" value="1:661856840248:android:96196c1731c8923f1594cd" />
+                  <option name="projectId" value="online-tictactoe-8d0aa" />
+                  <option name="projectNumber" value="661856840248" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />

@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#1F1B24">
+
+    <!-- Container for logo + back button -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+
+        <!-- Logo -->
+        <ImageView
+            android:id="@+id/logoImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logocropnobg"
+            android:layout_gravity="center"/>
+
+        <!-- Back Button (overlapping on top-left) -->
+        <ImageView
+            android:id="@+id/backBtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/back_button"
+            android:layout_gravity="start|top"
+            android:layout_margin="8dp" />
+    </FrameLayout>
+
+    <!-- Username -->
+    <EditText
+        android:id="@+id/usernameEdit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/draw_text_corner"
+        android:paddingLeft="20dp"
+        android:hint="Username"
+        android:textColorHint="#888"
+        android:textColor="#FFF"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="-30dp"/>
+
+    <!-- Password -->
+    <EditText
+        android:id="@+id/passwordEdit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/draw_text_corner"
+        android:paddingLeft="20dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColorHint="#888"
+        android:textColor="#FFF"
+        android:layout_margin="20dp"/>
+
+    <!-- Login Button -->
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="#1F0124"
+        android:backgroundTint="#FF69B4" />
+
+    <!-- Sign up prompt -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:gravity="center"
+        android:id="@+id/signuptext"
+        android:text="No username, need to SignUp ?"
+        android:textColor="#FFF"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>
