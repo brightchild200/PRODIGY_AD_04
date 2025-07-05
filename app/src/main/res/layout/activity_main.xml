@@ -10,13 +10,34 @@
 
     tools:context=".MainActivity">
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="460dp"
-        android:layout_marginTop="-10dp"
-        android:src="@drawable/logocropnobg" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-10dp">
 
-<!--<TextView-->
+        <!-- Main Logo -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="460dp"
+            android:src="@drawable/logocropnobg"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true" />
+
+        <!-- Profile Avatar (Top-Right Corner) -->
+        <ImageView
+            android:id="@+id/profilesection"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="top|end"
+            android:layout_margin="12dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/avatar1"
+            android:background="@drawable/avatar_selected_border"
+            android:padding="15dp" />
+    </FrameLayout>
+
+
+    <!--<TextView-->
 <!--    android:layout_width="match_parent"-->
 <!--    android:layout_height="wrap_content"-->
 <!--    android:text="Tic Tac Toe"-->

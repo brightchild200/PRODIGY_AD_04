@@ -3,8 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/logo"
-    android:alpha="0.8">
+    android:background="@drawable/logolight">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -29,6 +28,17 @@
             android:textColor="@android:color/white"
             android:textSize="18sp"
             android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/player1Avatar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="60dp"
+            android:background="@drawable/circular_image_background"
+        />
+
+        
+        
     </LinearLayout>
 
 
@@ -63,7 +73,7 @@
                 android:id="@+id/player1Name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Reza"
+                android:text="You"
                 android:textColor="@android:color/white"
                 android:textSize="18sp"
                 android:textStyle="bold"
@@ -96,7 +106,7 @@
                 android:id="@+id/player2Name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Arshia"
+                android:text="You'r Friend"
                 android:textColor="@android:color/white"
                 android:textSize="18sp"
                 android:textStyle="bold"

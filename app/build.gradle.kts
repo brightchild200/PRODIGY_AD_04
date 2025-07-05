@@ -41,38 +41,57 @@ android {
 }
 
 dependencies {
-
+    // ----- AndroidX / Material -----
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
-    implementation(libs.firebase.firestore)
-    implementation(libs.firebase.database.ktx)
-    implementation(libs.firebase.auth.ktx)
-//    implementation(libs.firebase.storage)
-//    implementation(libs.firebase.firestore.ktx)
-    testImplementation(libs.junit)
-//    implementation ("com.google.firebase:firebase-auth:23.2.1")
-//    implementation ("com.google.firebase:firebase-auth-ktx:23.2.1")
-    // Use Firebase BOM to manage compatible versions
-//    implementation(platform("com.google.firebase:firebase-bom:32.7.0"))
-    implementation ("com.google.firebase:firebase-auth:22.3.0")
-    implementation("com.google.firebase:firebase-analytics")
-    implementation ("com.google.firebase:firebase-firestore:24.9.0")
-    implementation("com.google.firebase:firebase-firestore")
-    implementation(platform("com.google.firebase:firebase-bom:33.12.0"))
-    implementation ("com.google.firebase:firebase-firestore-ktx:24.9.0")
-    implementation ("com.google.firebase:firebase-storage-ktx")
-    implementation ("androidx.core:core-ktx:1.12.0")
-    implementation ("androidx.appcompat:appcompat:1.6.1")
-//    implementation("com.google.firebase:firebase-auth-ktx")
-//    implementation("com.google.firebase:firebase-firestore-ktx")
-//    implementation("com.google.firebase:firebase-database-ktx")
+    implementation("androidx.cardview:cardview:1.0.0")
 
-    // In app-level build.gradle
-//    implementation ('com.google.firebase:firebase-database-ktx:20.3.0')
-//    implementation ('com.google.firebase:firebase-core:21.1.1')
+    // ----- Firebase (BOM makes versions consistent) -----
+    implementation(platform("com.google.firebase:firebase-bom:33.12.0"))
+    implementation("com.google.firebase:firebase-auth-ktx")
+    implementation("com.google.firebase:firebase-firestore-ktx")
+    // If you still need Realtime DB or Storage:
+    // implementation("com.google.firebase:firebase-database-ktx")
+    // implementation("com.google.firebase:firebase-storage-ktx")
+    implementation("com.google.firebase:firebase-analytics")
+
+    // ----- Testing -----
+    testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 }
+
+
+//dependencies {
+//
+//    implementation(libs.androidx.core.ktx)
+//    implementation(libs.androidx.appcompat)
+//    implementation(libs.material)
+//    implementation(libs.androidx.activity)
+//    implementation(libs.androidx.constraintlayout)
+//    implementation(libs.firebase.firestore)
+//    implementation(libs.firebase.database.ktx)
+//    implementation(libs.firebase.auth.ktx)
+////    implementation(libs.firebase.storage)
+////    implementation(libs.firebase.firestore.ktx)
+//    testImplementation(libs.junit)
+//
+//    implementation ("com.google.firebase:firebase-auth:22.3.0")
+//    implementation("com.google.firebase:firebase-analytics")
+//    implementation ("com.google.firebase:firebase-firestore:24.9.0")
+//    implementation("com.google.firebase:firebase-firestore")
+//    implementation(platform("com.google.firebase:firebase-bom:33.12.0"))
+//    implementation ("com.google.firebase:firebase-firestore-ktx:24.9.0")
+//    implementation ("com.google.firebase:firebase-storage-ktx")
+//    implementation ("androidx.core:core-ktx:1.12.0")
+//    implementation ("androidx.cardview:cardview:1.0.0")
+//    implementation ("androidx.appcompat:appcompat:1.6.1")
+//
+//    androidTestImplementation(libs.androidx.junit)
+//    androidTestImplementation(libs.androidx.espresso.core)
+//
+//
+//}

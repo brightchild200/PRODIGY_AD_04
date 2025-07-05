@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="StatStyle">
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:textColor">#BBBBBB</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="StatValueStyle">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+    </style>
+
+    <style name="EditOptionStyle">
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:textColor">#CCCCCC</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+
+    <!--    <style name="StatStyle">-->
+<!--        <item name="android:layout_marginTop">12dp</item>-->
+<!--        <item name="android:textColor">#BBBBBB</item>-->
+<!--        <item name="android:textSize">14sp</item>-->
+<!--    </style>-->
+
+<!--    <style name="StatValueStyle">-->
+<!--        <item name="android:textColor">#FFFFFF</item>-->
+<!--        <item name="android:textSize">15sp</item>-->
+<!--        <item name="android:layout_marginBottom">8dp</item>-->
+<!--    </style>-->
+
+<!--    <style name="EditOptionStyle">-->
+<!--        <item name="android:layout_marginTop">12dp</item>-->
+<!--        <item name="android:textColor">#CCCCCC</item>-->
+<!--        <item name="android:textSize">14sp</item>-->
+<!--    </style>-->
+
+</resources>
